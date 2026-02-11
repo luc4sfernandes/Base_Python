@@ -8,10 +8,11 @@ arquivo = open("dados1.txt", 'w', encoding='utf-8')
 print(f"Caminho Absoluto: {os.path.abspath(arquivo.name)}\n")
 
 # 3. Escrita de dados
-arquivo.write("Ola Mundo!!!")
+arquivo.write("Ola Mundo!!!\n Segunda linha do texto!!!\n Terceira Linha")
 
 # 4. Obtendo o caminho relativo
 print(f"Caminho Relativo: {os.path.relpath(arquivo.name)}\n")
+# print(arquivo.closed) - Imprime se fechou ou não o arquivo
 
 # 5. Representação do objeto e fechamento
 print(arquivo)
